@@ -21,9 +21,9 @@ find_jobs = driver.find_elements_by_class_name('jobs-search-results__list-item')
 job_list = [print("called") for job in find_jobs]
 x = range(len(job_list))
 for i in x:
-    time.sleep(3)
+    time.sleep(10)
     find_jobs[i].click()
-    time.sleep(3)
+    time.sleep(10)
     save_job = driver.find_element_by_class_name("jobs-save-button")
     save_job.click()
 
